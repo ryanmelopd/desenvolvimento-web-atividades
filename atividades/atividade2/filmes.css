@@ -1,0 +1,66 @@
+* {
+    font-family: "Roboto", Arial;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #34363B;
+    color: white;
+}
+
+header {
+    margin: 22px;
+    text-align: center;
+}
+
+section {
+    margin: 28px;
+    padding: 8px;
+    background-color: #24262B;
+    border: 4px solid #C2A878;
+    border-radius: 12px; /* Propriedade que aprendi no w3s schools que arredonda a borda */
+}
+
+p {
+    margin: 8px;
+}
+
+ul {
+    margin: 10px;
+    margin-left: 26px;
+}
+
+a {
+    color: white;
+    margin: 14px;
+}
+
+h2 {
+    padding-left: 8px;
+}
+
+img {
+    border-radius: 10px;
+    width: 54%;
+}
+
+.imagem-link {
+    width: 54%;
+}
+
+#link {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    background: black;
+    height: 50px;
+}
+
+/* Utilizacação de hover */
+p > a:hover {
+    text-shadow: 2px 2px black;
+    text-decoration: none;
+}
