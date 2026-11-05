@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rotina semanal</title>
+    <title>Rotina semanal e tabela da aula</title>
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
@@ -14,7 +14,9 @@
             padding: 0;
             height: 70vh;
             width: 100%;
+
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
         }
@@ -48,6 +50,22 @@
         td {
             width: 200px;
             background-color: white;
+        }
+
+        #tabela-aula, .th-aula, .tr-aula, .td-aula {
+            border: 1px solid black;
+            border-collapse: collapse;
+            background-color: white;
+            color: black;
+        }
+
+        .th-aula, .td-aula {
+            text-align: center;
+            padding: 6px;
+        }
+
+        #tabela-aula {
+            margin-top: 75px;
         }
     </style>
 </head>
@@ -93,6 +111,31 @@
             <td>Aula da faculdade</td>
             <td>Estudar</td>
             <td>Jogar e conversar</td>
+        </tr>
+    </table>
+
+    <table id="tabela-aula">
+        <caption id="caption-aula">Tabela da aula</caption>
+        <tr class="tr-aula">
+            <th rowspan="2" class="th-aula">Estudante</th>
+            <th colspan="2" class="th-aula">Formação</th>
+            <th rowspan="2" class="th-aula">Ano de conclusão</th>
+        </tr>
+        <tr class="tr-aula">
+            <th class="th-aula">Graduação</th>
+            <th class="th-aula">Pós-Graduação</th>
+        </tr>
+        <tr class="tr-aula">
+            <th class="th-aula">José</th>
+            <td class="td-aula">Ciência da Computação</td>
+            <td class="td-aula">Inteligência Artificial</td>
+            <td class="td-aula">2023</td>
+        </tr>
+        <tr class="tr-aula">
+            <th class="th-aula">Ana</th>
+            <td class="td-aula">Engenharia de Software</td>
+            <td class="td-aula">Gestão de Projetos</td>
+            <td class="td-aula">2022</td>
         </tr>
     </table>
 </body>
