@@ -14,12 +14,18 @@ img:hover {
   transform: scale(1.1);
 }
 body{
+    font-family: Arial, sans-serif;
     display: flex;
     flex-direction: column;
     background-color: black;
 }
 h1{
-    color: rgb(56, 93, 240);
+    color: white;
+    font-size: 30px;
+    margin: 10px;
+}
+h1 span{
+    color:#1688ff;
 }
 #perfil{
     width: 30px;
@@ -32,16 +38,19 @@ a, p{
     margin: 8px;
 }
 nav{
+    height: 20%;
     display: flex;
     flex-direction: row;
+    align-items: center;
+    margin: 5px;
     justify-content: space-between;
 }
 .opcao{
     display: flex;
     flex-direction: column;
     text-align: center;
-    width: 200px;
-    height: 150px;
+    width: 20%;
+    height: 15%;
 }
 .catalogo {
     display: flex;
@@ -54,15 +63,19 @@ nav{
     padding: 2px;
     width: 20%;
     height: 20px;
-    background-color: rgb(56, 93, 240);
+    background-color: rgb(26, 98, 157);
 }
 #cima{
+    height: 20%;
     display: flex;
+    margin: 5px;
     flex-direction: row;
+    align-items: center;
     justify-content: space-between;
 }
 header{
-    background-color: rgb(46, 46, 46);
+    border-bottom: 1px solid #26364a;
+    background-color: #07111f;
     display: flex;
     flex-direction: column;
 }
