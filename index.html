@@ -7,27 +7,50 @@
     <style>
         body {
             font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
         }
 
         h1 {
             text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .atividades {
+            width: 100%;
+            max-width: 900px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
         }
 
         a {
             color: black;
             text-decoration: none;
+            text-align: center;
             border: 2px solid grey;
             border-radius: 10px;
-            padding: 12px;
+            padding: 20px;
+            background-color: beige;
         }
 
-        div {
-            width: 100%;
-            background-color: beige;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 8px;
+        a:hover {
+            background-color: #e6e0c8;
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 15px;
+            }
+
+            h1 {
+                font-size: 22px;
+            }
+
+            .atividades {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
@@ -36,11 +59,12 @@
         <h1>Visualização das atividades pelo Github Pages</h1>
     </header>
     <main>
-        <div>
+        <div class="atividades">
             <a href="atividades/atividade1/index.html" target="_blank">Atividade 1</a>
-            <a href="atividades/atividade2/index.html" target="_blank">Atividade 2</a> 
+            <a href="atividades/atividade2/index.html" target="_blank">Atividade 2</a>
             <a href="atividades/atividade3/index.html" target="_blank">Atividade 3</a>
             <a href="atividades/atividade4/index.html" target="_blank">Atividade 4</a>
+            <a href="atividades/atividade5/index.html" target="_blank">Atividade 5</a>
         </div>
     </main>
 </body>

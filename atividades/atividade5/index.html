@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            color: #333;
+            padding: 30px 15px;
+        }
+
+        .container {
+            width: 100%;
+        }
+
+        .formulario {
+            background-color: white;
+            width: 100%;
+            max-width: 600px;
+            margin: auto;
+            padding: 35px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #2563eb;
+            margin-bottom: 25px;
+        }
+
+        .campo {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            color: #444;
+            margin-bottom: 8px;
+        }
+
+        .entrada {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 15px;
+        }
+
+        .entrada:focus {
+            outline: none;
+            border-color: #2563eb;
+        }
+
+        textarea {
+            min-height: 100px;
+        }
+
+        .opcoes {
+            margin-top: 8px;
+        }
+
+        .opcoes label {
+            font-weight: normal;
+            margin-bottom: 10px;
+        }
+
+        .opcoes input {
+            margin-right: 5px;
+        }
+
+        .botoes {
+            margin-top: 25px;
+        }
+
+        button {
+            padding: 13px 20px;
+            border: none;
+            border-radius: 6px;
+            background-color: #2563eb;
+            color: white;
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background-color: #1d4ed8;
+        }
+
+        .btn-limpar {
+            background-color: #777;
+        }
+
+        .btn-limpar:hover {
+            background-color: #555;
+        }
+
+        @media (max-width: 480px) {
+            .formulario {
+                padding: 22px;
+            }
+
+            h1 {
+                font-size: 23px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form class="formulario">
+            <h1>Formulário</h1>
+            <div class="campo">
+                <label for="nome">Nome completo</label>
+                <input class="entrada" type="text" id="nome" name="nome"
+                    placeholder="Digite seu nome" required>
+            </div>
+            <div class="campo">
+                <label for="email">E-mail</label>
+                <input class="entrada" type="email" id="email" name="email"
+                    placeholder="exemplo@email.com" required>
+            </div>
+            <div class="campo">
+                <label for="senha">Senha</label>
+                <input class="entrada" type="password" id="senha" name="senha"
+                    placeholder="Digite sua senha" required>
+            </div>
+            <div class="campo">
+                <label for="nascimento">Data de nascimento</label>
+                <input class="entrada" type="date" id="nascimento" name="nascimento">
+            </div>
+            <div class="campo">
+                <label for="curso">Curso</label>
+                <select class="entrada" id="curso" name="curso">
+                    <option value="">Selecione seu curso</option>
+                    <option value="engenharia-software">Engenharia de Software</option>
+                    <option value="sistemas-informacao">Sistemas de Informação</option>
+                    <option value="ciencia-computacao">Ciência da Computação</option>
+                    <option value="ads">Análise e Desenvolvimento de Sistemas</option>
+                </select>
+            </div>
+            <div class="campo">
+                <label>Sexo</label>
+                <div class="opcoes">
+                    <label><input type="radio" name="sexo" value="masculino"> Masculino</label>
+                    <label><input type="radio" name="sexo" value="feminino"> Feminino</label>
+                    <label><input type="radio" name="sexo" value="outro"> Outro</label>
+                    <label><input type="radio" name="sexo" value="nao-informar"> Prefiro não informar</label>
+                </div>
+            </div>
+            <div class="campo">
+                <label>Interesses</label>
+                <div class="opcoes">
+                    <label><input type="checkbox" name="interesses" value="programacao"> Programação</label>
+                    <label><input type="checkbox" name="interesses" value="tecnologia"> Tecnologia</label>
+                    <label><input type="checkbox" name="interesses" value="design"> Design</label>
+                    <label><input type="checkbox" name="interesses" value="games"> Jogos</label>
+                </div>
+            </div>
+            <div class="campo">
+                <label for="comentarios">Comentários</label>
+                <textarea class="entrada" id="comentarios" name="comentarios"
+                    placeholder="Escreva seus comentários..."></textarea>
+            </div>
+            <div class="campo">
+                <label for="foto">Upload de foto</label>
+                <input type="file" id="foto" name="foto" accept="image/*">
+            </div>
+            <div class="botoes">
+                <button type="submit">Enviar formulário</button>
+                <button type="reset" class="btn-limpar">Limpar</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
