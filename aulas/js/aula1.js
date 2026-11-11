@@ -1,0 +1,6 @@
+let nome = prompt("Digite seu nome: ")
+let idade = Number(prompt("Digite sua idade: "))
+let num1 = Number(prompt("Digite um primeiro número: "))
+let num2 = Number(prompt("Digite um segundo número: "))
+console.log("Meu nome é " + nome + ", e minha idade é " + idade)
+alert(num1 + " + " + num2 + " = " + (num1 + num2))
